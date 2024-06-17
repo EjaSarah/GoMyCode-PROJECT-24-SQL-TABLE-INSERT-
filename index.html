@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Database inser statement</title>
+  </head>
+  <body>
+    <div>
+      <!-- creating insert statement that will insert values into each column -->
+      INSERT INTO product (product_id, product_name, category, price) VALUES
+      ("PO1", "Samsung Galaxy S20", "SmartPhone", 3299);
+
+      <br /><br />
+
+      INSERT INTO product (product_id, product_name, category, price) VALUES
+      ("PO2", "Asus Notebook", "PC", 4599);
+
+      <br /><br />
+
+      INSERT INTO customer (customer_id, customer_name, customer_tel) VALUES
+      ("CO1", "Ali", 71321009);
+
+      <br /><br />
+
+      INSERT INTO customer (customer_id, customer_name, customer_tel) VALUES
+      ("CO2", "Asma", 77345823);
+
+      <br /><br />
+      INSERT INTO orders (customer_id, product_id, orderDate, quantity,
+      total_price) VALUES ("CO1", PO2, NULL, 2, 9198)
+
+      <br /><br />
+      INSERT INTO orders (customer_id, product_id, orderDate, quantity,
+      total_price) VALUES ("CO2", PO1, 28/05/2020, 1, 3299)
+    </div>
+  </body>
+</html>
